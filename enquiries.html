@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Woolworths offers a variety of products it offers different kinds of cakesand clothes for women and for men.
+    store policies that set woolworths apart from its competitors. Three years after store opened, a second branch was launched in Durban.
+    This was followed by the opening of two more stores in port elizabeth and johannesburg a year later.Since its humble beginnings, Woolworths has been the big thing
+    today, the company targets familiesand individuals seeking quality products.">
+    <meta name="keyword" content="Golden Crumb patisserie,Ivory Whisk,Woolworths Pants,Woolworths shorts">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://{s}.tile.openstreetmap.org; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; frame-src https://docs.google.com;">
+    <title>Enquiries</title>
+    <!-- Linked to the single external CSS file -->
+     <link rel="stylesheet" href="css_assets/Styling.css">
+     <script src="js_assets/myjavascript.js" defer></script>
+</head>
+<body>
+<style>
+body {
+  background-image: url(images/Page/ss.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+    <header>
+        <img src="images/Page/WOOLWORTH.png" width="150" height="150" alt="Woolworths Logo">
+        <nav>
+            <ul class="flex-nav-container">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="enquiries.html">Enquiries</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact_us.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <main class="form-container fade-in">
+        <!-- SECTION 4.1: Form ID and Explicit Submission Attributes -->
+        <form class="enquiry-form" id="enquiryForm" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+            
+            <h2>Enquiry Form</h2>
+
+            <!-- Dynamic Error Feedback Boxes (Section 4.1 JavaScript Client-Side Validation validation targets) -->
+            <div id="enquiryError" style="color: #ff3333; font-weight: bold; margin-bottom: 15px; display: none; text-align: center;"></div>
+            <div id="enquirySuccess" style="color: #2baf2b; font-weight: bold; margin-bottom: 15px; display: none; text-align: center;"></div>
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="2">
+            </div>
+
+            <div class="form-group">
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname" placeholder="Enter your surname" required minlength="2">
+            </div>
+
+            <!--Email Address validation criteria -->
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+            </div>
+
+            <!--Phone structure (Exactly 10 numerical characters) -->
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 0821234567" required pattern="[0-9]{10}">
+            </div>
+
+            <!--Date matching requirements -->
+            <div class="form-group">
+                <label for="eventDate">Date of Event:</label>
+                <input type="date" id="eventDate" name="eventDate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reason">Reason / Event Type:</label>
+                <select name="reason" id="reason">
+                    <option value="Birthday">Birthday</option>
+                    <option value="Wedding">Wedding</option>
+                    <option value="clothes">clothes</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="details">Order Details:</label>
+                <textarea id="details" name="details" placeholder="Tell us more about your order..." rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Submit Enquiry</button>
+        </form>
+    </main>
+    
+
+    <footer>
+        <p>© 2026 Woolworths. All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="enquiries.html">Enquiries</a> |
+            <a href="products.html">Products</a> |
+            <a href="contact_us.html">Contact us</a>
+        </p>
+        <div class="social-links" style="margin-top: 15px;">
+            <a href="https://www.facebook.com/WoolworthsSA" target="_blank" rel="noopener noreferrer">Facebook</a> |
+            <a href="https://twitter.com/WOOLWORTHS_SA" target="_blank" rel="noopener noreferrer">Twitter</a> |
+            <a href="https://www.instagram.com/woolworths_sa" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>
